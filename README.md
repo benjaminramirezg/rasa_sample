@@ -1,8 +1,8 @@
 # rasa_sample
 ## Instalation
-pip install rasa
+- pip install rasa
 ## Running the project
-rasa run actions
-rasa shell
+- rasa run actions
+- rasa shell
 ## Training new versions
-rasa train
+- rasa train
