@@ -1,0 +1,28 @@
+version: "2.0"
+
+stories:
+
+- story: story0
+  steps:
+  - intent: give_time
+  - action: utter_time
+  - action: action_show_time
+
+- story: story1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: give_time
+  - action: utter_time
+  - action: action_show_time
+
+- story: story2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: give_time
+  - action: utter_time
+  - action: action_show_time
+  - intent: goodbye
+  - action: utter_goodbye
+

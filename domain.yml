@@ -1,0 +1,30 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - give_time
+
+entities:
+ - time_zone
+
+slots:
+ time_zone:
+  type: text
+
+responses:
+  utter_greet:
+  - text: "Hola!"
+
+  utter_time:
+  - text: "Esta es:"
+
+  utter_goodbye:
+  - text: "Adiós!"
+
+actions:
+ - action_show_time
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

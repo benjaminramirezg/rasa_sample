@@ -1,0 +1,27 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hola
+    - buenos días
+    - buenas tardes
+
+- intent: goodbye
+  examples: |
+    - adiós
+    - hasta luego
+    - hasta ahora
+    - hasta pronto
+    - nos vemos
+
+- intent: give_time
+  examples: |
+    - qué hora es en [America/Bogota]{"entity": "time_zone", "value": "America/Bogota"}
+    - dime la hora en [America/Bogota]{"entity": "time_zone", "value": "America/Bogota"}
+    - qué hora es en [America/Bogota]{"entity": "time_zone", "value": "America/Bogota"}
+    - dime la hora en [America/Bogota]{"entity": "time_zone", "value": "America/Bogota"}
+    - qué hora es en [Europe/Madrid]{"entity": "time_zone", "value": "Europe/Madrid"}
+    - dime la hora en [Europe/Madrid]{"entity": "time_zone", "value": "Europe/Madrid"}
+    - qué hora es en [Europe/Madrid]{"entity": "time_zone", "value": "Europe/Madrid"}
+    - dime la hora en [Europe/Madrid]{"entity": "time_zone", "value": "Europe/Madrid"}
